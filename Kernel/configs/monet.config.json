@@ -1,0 +1,48 @@
+[
+  {
+    "kernelSource": {
+      "name": "Xiaomi 10 lite 5G",
+      "repo": "https://github.com/mikairyuu/kernel_xiaomi_sm7250.git",
+      "branch": "神速",
+      "device": "monet",
+      "defconfig": "monet_defconfig"
+    },
+    "toolchains": [
+      {
+        "repo": "https://gitlab.com/Flamingo-OS/dora_clang.git",
+        "branch": "A13",
+        "name": "dora_clang",
+        "binaryEnv": [
+          "bin"
+        ]
+      }
+    ],
+    "enableCcache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "clang",
+      "externalCommands": {
+        "CROSS_COMPILE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
+        "LD": "ld.lld",
+        "AR": "llvm-ar",
+        "NM": "llvm-nm",
+        "OBJCOPY": "llvm-objcopy",
+        "OBJDUMP": "llvm-objdump",
+        "READELF": "llvm-readelf",
+        "OBJSIZE": "llvm-size",
+        "STRIP": "llvm-strip",
+        "LDGOLD": "aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "llvm-ar",
+        "LLVM_DIS": "llvm-dis",
+        "CONFIG_THINLTO": ""
+      }
+    },
+    "AnyKernel3": {
+      "use": false,
+      "release": flase
+    },
+    "enableKernelSU": true,
+    "enableLXC": true
+  }
+]
