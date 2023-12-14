@@ -40,9 +40,9 @@
     },
     "AnyKernel3": {
       "use": false,
-      "release": flase
+      "release": false
     },
     "enableKernelSU": true,
-    "enableLXC": true
+    "enableLXC": false
   }
 ]
