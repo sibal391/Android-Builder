@@ -3,6 +3,7 @@
     "kernelSource": {
       "name": "Xiaomi 10 lite 5G",
       "repo": "https://github.com/mikairyuu/kernel_xiaomi_sm7250.git",
+      "branch": "神速",
       "device": "monet",
       "defconfig": "monet_defconfig"
     },
