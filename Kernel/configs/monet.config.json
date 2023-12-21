@@ -56,8 +56,12 @@
     },
     "AnyKernel3": {
       "use": true,
-      "release": false
-    },
+      "release": false,
+      "custom": {
+     "repo": "https://github.com/sibal391/AnyKernel3.git",
+     "branch": "monet"
+      }
+   },
     "enableKernelSU": true,
     "enableLXC": false
   }
