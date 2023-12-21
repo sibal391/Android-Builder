@@ -9,24 +9,8 @@
     },
     "toolchains": [
       {
-        "name": "clang",
-        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r510928.tar.gz",
-        "binaryEnv": [
-          "bin"
-        ]
-      },
-      {
-        "name": "gcc64",
-        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9.git",
-        "branch": "lineage-19.1",
-        "binaryEnv": [
-          "bin"
-        ]
-      },
-      {
-        "name": "gcc",
-        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9.git",
-        "branch": "lineage-19.1",
+        "name": "ZyC-clang",
+        "url": "https://github.com/ZyCromerZ/Clang/releases/download/18.0.0git-20231220-release/Clang-18.0.0git-20231220.tar.gz",
         "binaryEnv": [
           "bin"
         ]
@@ -37,9 +21,8 @@
       "ARCH": "arm64",
       "CC": "clang",
       "externalCommands": {
-        "CLANG_COMPILE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE": "gcc64/bin/aarch64-linux-android-",
-        "CROSS_COMPILE_COMPAT": "gcc/bin/arm-linux-androideabi-",
+        "CROSS_COMPILE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
         "LD": "ld.lld",
         "AR": "llvm-ar",
         "NM": "llvm-nm",
@@ -47,7 +30,7 @@
         "OBJDUMP": "llvm-objdump",
         "READELF": "llvm-readelf",
         "OBJSIZE": "llvm-size",
-        "LDGOLD": "aarch64-linux-android-ld.gold",
+        "LDGOLD": "aarch64-linux-gnu-ld.gold",
         "STRIP": "llvm-strip",
         "LLVM_AR": "llvm-ar",
         "LLVM_DIS": "llvm-dis"
