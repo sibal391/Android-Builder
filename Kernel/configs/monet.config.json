@@ -9,9 +9,25 @@
     },
     "toolchains": [
       {
-        "repo": "https://gitlab.com/Flamingo-OS/dora_clang.git",
-        "branch": "A13",
-        "name": "dora_clang",
+        "repo": "https://gitlab.com/LeCmnGend/proton-clang.git",
+        "branch": "clang-17",
+        "name": "clang",
+        "binaryEnv": [
+          "bin"
+        ]
+      },
+      {
+        "repo": "https://github.com/ZyCromerZ/aarch64-zyc-linux-gnu.git",
+        "brach": "14",
+        "name": "gcc64",
+        "binaryEnv": [
+          "bin"
+        ]
+      },
+       {
+        "repo": "https://github.com/ZyCromerZ/arm-zyc-linux-gnueabi.git",
+        "brach": "14",
+        "name": "gcc",
         "binaryEnv": [
           "bin"
         ]
@@ -22,8 +38,8 @@
       "ARCH": "arm64",
       "CC": "clang",
       "externalCommands": {
-        "CROSS_COMPILE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
+        "CROSS_COMPILE": "aarch64-zyc-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "arm-zyc-linux-gnueabi-",
         "LD": "ld.lld",
         "AR": "llvm-ar",
         "NM": "llvm-nm",
@@ -32,14 +48,14 @@
         "READELF": "llvm-readelf",
         "OBJSIZE": "llvm-size",
         "STRIP": "llvm-strip",
-        "LDGOLD": "aarch64-linux-gnu-ld.gold",
+        "LDGOLD": "aarch64-zyc-linux-gnu-ld.gold",
         "LLVM_AR": "llvm-ar",
         "LLVM_DIS": "llvm-dis",
         "CONFIG_THINLTO": ""
       }
     },
     "AnyKernel3": {
-      "use": false,
+      "use": true,
       "release": false
     },
     "enableKernelSU": true,
