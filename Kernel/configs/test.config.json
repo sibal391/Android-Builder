@@ -17,14 +17,14 @@
       },
       {
         "name": "gcc64"
-        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/961622e926a1b21382dba4dd9fe0e5fb3ee5ab7c.tar.gz"
+        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/961622e926a1b21382dba4dd9fe0e5fb3ee5ab7c.tar.gz",
         "binaryEnv": [
           "bin"
         ]
       },
       {
         "name": "gcc"
-        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+archive/cb7b3ac1b7fdb49474ff68761909934d1142f594.tar.gz"
+        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+archive/cb7b3ac1b7fdb49474ff68761909934d1142f594.tar.gz",
         "binaryEnv": [
           "bin"
         ]
