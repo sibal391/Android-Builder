@@ -9,28 +9,21 @@
     },
     "toolchains": [
       {
-        "repo": "https://gitlab.com/LeCmnGend/proton-clang.git",
-        "branch": "clang-17",
         "name": "clang",
-        "binaryEnv": [
-          "bin"
-        ]
+        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r510928.tar.gz",
+        "binaryEnv": ["bin"]
       },
       {
-        "repo": "https://github.com/ZyCromerZ/aarch64-zyc-linux-gnu.git",
-        "brach": "14",
         "name": "gcc64",
-        "binaryEnv": [
-          "bin"
-        ]
+        "repo": "https://github.com/ZyCromerZ/aarch64-zyc-linux-gnu.git",
+        "branch": "14",
+        "binaryEnv": ["bin"]
       },
        {
+        "name": "gcc"
         "repo": "https://github.com/ZyCromerZ/arm-zyc-linux-gnueabi.git",
-        "brach": "14",
-        "name": "gcc",
-        "binaryEnv": [
-          "bin"
-        ]
+        "bracnh": "14",
+        "binaryEnv": ["bin"]
       }
     ],
     "enableCcache": true,
