@@ -47,7 +47,7 @@
         "OBJDUMP": "llvm-objdump",
         "READELF": "llvm-readelf",
         "OBJSIZE": "llvm-size",
-        "LDGOLD": "aarch64-linux-android-ld.gold"
+        "LDGOLD": "aarch64-linux-android-ld.gold",
         "STRIP": "llvm-strip",
         "LLVM_AR": "llvm-ar",
         "LLVM_DIS": "llvm-dis"
