@@ -22,7 +22,7 @@
        {
         "name": "gcc"
         "repo": "https://github.com/ZyCromerZ/arm-zyc-linux-gnueabi.git",
-        "bracnh": "14",
+        "branch": "14",
         "binaryEnv": ["bin"]
       }
     ],
