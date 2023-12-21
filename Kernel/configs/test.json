@@ -1,0 +1,55 @@
+[
+  {
+    "kernelSource": {
+      "name": "Xiaomi10Lite5G",
+      "repo": "https://github.com/mikairyuu/kernel_xiaomi_sm7250.git",
+      "branch": "神速",
+      "device": "monet",
+      "defconfig": "monet_defconfig"
+    },
+    "toolchains": [
+      {
+        "name": "clang",
+        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r510928.tar.gz",
+        "binaryEnv": [
+          "bin"
+        ]
+      },
+      {
+        "repo": "https://github.com/ZyCromerZ/aarch64-zyc-linux-gnu.git",
+        "branch": "14",
+        "name": "gcc64",
+        "binaryEnv": [
+          "bin"
+        ]
+      },
+      {
+        "repo": "https://github.com/ZyCromerZ/arm-zyc-linux-gnueabi.git",
+        "branch": "14",
+        "name": "gcc",
+        "binaryEnv": [
+          "bin"
+        ]
+      }
+    ],
+    "enableCcache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "clang",
+      "externalCommands": {
+        "CROSS_COMPILE": "aarch64-zyc-linux-gnu-",
+        "CROSS_COMPILE_COMPAT": "arm-zyc-linux-gnueabi-",
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": false,
+      "custom": {
+        "repo": "https://github.com/sibal391/AnyKernel3.git",
+        "branch": "monet"
+      }
+    },
+    "enableKernelSU": true,
+    "enableLXC": false
+  }
+]
