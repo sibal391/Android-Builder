@@ -16,17 +16,15 @@
         ]
       },
       {
-        "repo": "https://github.com/ZyCromerZ/aarch64-zyc-linux-gnu.git",
-        "branch": "14",
-        "name": "gcc64",
+        "name": "gcc64"
+        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/961622e926a1b21382dba4dd9fe0e5fb3ee5ab7c.tar.gz"
         "binaryEnv": [
           "bin"
         ]
       },
       {
-        "repo": "https://github.com/ZyCromerZ/arm-zyc-linux-gnueabi.git",
-        "branch": "14",
-        "name": "gcc",
+        "name": "gcc"
+        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+archive/cb7b3ac1b7fdb49474ff68761909934d1142f594.tar.gz"
         "binaryEnv": [
           "bin"
         ]
@@ -37,8 +35,8 @@
       "ARCH": "arm64",
       "CC": "clang",
       "externalCommands": {
-        "CROSS_COMPILE": "aarch64-zyc-linux-gnu-",
-        "CROSS_COMPILE_COMPAT": "arm-zyc-linux-gnueabi-",
+        "CROSS_COMPILE": "aarch64-linux-android-",
+        "CROSS_COMPILE_COMPAT": "arm-linux-androideabi-",
         "LD": "ld.lld",
         "AR": "llvm-ar",
         "NM": "llvm-nm",
@@ -47,7 +45,6 @@
         "READELF": "llvm-readelf",
         "OBJSIZE": "llvm-size",
         "STRIP": "llvm-strip",
-        "LDGOLD": "aarch64-zyc-linux-gnu-ld.gold",
         "LLVM_AR": "llvm-ar",
         "LLVM_DIS": "llvm-dis"
       }
