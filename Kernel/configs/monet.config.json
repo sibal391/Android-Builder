@@ -11,19 +11,25 @@
       {
         "name": "clang",
         "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r510928.tar.gz",
-        "binaryEnv": ["bin"]
+        "binaryEnv": [
+          "bin"
+        ]
       },
       {
         "name": "gcc64",
         "repo": "https://github.com/ZyCromerZ/aarch64-zyc-linux-gnu.git",
         "branch": "14",
-        "binaryEnv": ["bin"]
+        "binaryEnv": [
+          "bin"
+        ]
       },
        {
         "name": "gcc"
         "repo": "https://github.com/ZyCromerZ/arm-zyc-linux-gnueabi.git",
         "branch": "14",
-        "binaryEnv": ["bin"]
+        "binaryEnv": [
+        "bin"
+         ]
       }
     ],
     "enableCcache": true,
