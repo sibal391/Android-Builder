@@ -28,8 +28,8 @@
         "repo": "https://github.com/ZyCromerZ/arm-zyc-linux-gnueabi.git",
         "branch": "14",
         "binaryEnv": [
-        "bin"
-         ]
+          "bin"
+        ]
       }
     ],
     "enableCcache": true,
